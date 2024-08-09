@@ -1,0 +1,165 @@
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".Contact_Page">
+
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/contact_usimage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/living_water_logo2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/rellayout1"
+                    android:layout_width="350dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="10dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/contact_usimage">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/contact_card1"
+                        android:layout_width="match_parent"
+                        android:layout_height="170dp"
+                        android:layout_marginTop="20dp"
+
+                        android:elevation="8dp"
+                        app:cardBackgroundColor="#fffafa"
+                        app:cardCornerRadius="20dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center_horizontal"
+                            android:text="Please Call Us For Orders"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"></TextView>
+
+
+                        <LinearLayout
+                            android:id="@+id/call_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:orientation="vertical">
+
+
+                            <Button
+                                android:id="@+id/contact_btn1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:backgroundTint="#162DA1"
+                                android:drawableLeft="@drawable/baseline_call_24"
+                                android:text="9666339067" />
+
+                            <Button
+                                android:id="@+id/contact_btn2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:backgroundTint="#162DA1"
+                                android:drawableLeft="@drawable/baseline_call_24"
+                                android:text="8465911545"
+                                android:textColor="#ffffff" />
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/contact_card2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:elevation="5dp"
+                        app:cardBackgroundColor="#f0ffff"
+                        app:cardCornerRadius="10dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:gravity="center_horizontal"
+                            android:text="Chat Ur Orders"
+                            android:textColor="#000000"
+                            android:textSize="20sp"
+                            android:textStyle="bold"></TextView>
+
+
+                        <LinearLayout
+                            android:id="@+id/msg_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:orientation="vertical">
+
+
+                            <Button
+                                android:id="@+id/chat_with_Us_Btn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:backgroundTint="#ffffff"
+                                android:drawableLeft="@drawable/whatsapp_chat"
+                                android:text="whatsapp"
+                                android:textColor="@color/black" />
+
+                            <Button
+                                android:id="@+id/mail_Us_Btn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="15dp"
+                                android:backgroundTint="#ffffff"
+                                android:drawableLeft="@drawable/ic_outline_email_24"
+                                android:text="livingwaterplant@gmail.com"
+                                android:textAllCaps="false"
+                                android:textColor="@color/black" />
+
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </ScrollView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

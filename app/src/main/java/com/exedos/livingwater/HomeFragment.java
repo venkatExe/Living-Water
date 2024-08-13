@@ -4,6 +4,7 @@ import android.os.Bundle;
 
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -203,6 +204,13 @@ private CardView waterCardView;
     }
 
     private void handleWaterOrder() {
+        Fragment nextFragment = new ContactUsFragment();
+
+        // Perform the fragment transaction to navigate to the next fragment
+        FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+        transaction.replace(R.id.frame_layout, nextFragment); // R.id.fragment_container is the ID of your container
+        transaction.addToBackStack(null); // This ensures the transaction is added to the back stack
+        transaction.commit();
         // Handle the order for the first CardView
         // Implement the desired order logic here
     }
@@ -220,10 +228,15 @@ private CardView waterCardView;
         cQuantityTextView.setText(String.valueOf(cWaterQuantity));
     }
 
+    // This method handles the order and navigates to the next fragment
     private void handleCWaterOrder() {
-        // Handle the order for the second CardView (c_waterCardView)
-        // Implement the desired order logic here
+        // Create an instance of the fragment you want to navigate to
+        Fragment nextFragment = new ContactUsFragment();
 
-
+        // Perform the fragment transaction to navigate to the next fragment
+        FragmentTransaction transaction = getParentFragmentManager().beginTransaction();
+        transaction.replace(R.id.frame_layout, nextFragment); // R.id.fragment_container is the ID of your container
+        transaction.addToBackStack(null); // This ensures the transaction is added to the back stack
+        transaction.commit();
     }
 }

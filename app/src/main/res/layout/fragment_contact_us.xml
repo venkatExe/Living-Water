@@ -57,7 +57,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="20dp"
                         android:gravity="center_horizontal"
-                        android:text="Please Call Us For Orders"
+                        android:text="Fragment Please Call Us For Orders"
                         android:textColor="#000000"
                         android:textSize="20sp"
                         android:textStyle="bold"></TextView>

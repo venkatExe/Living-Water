@@ -52,7 +52,7 @@ public class ContactUsFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_DIAL);
-                intent.setData(Uri.parse("tel: (+91)7989979537"));
+                intent.setData(Uri.parse("tel: (+91)8465911545"));
                 startActivity(intent);
 
             }
@@ -61,7 +61,7 @@ public class ContactUsFragment extends Fragment {
         ChatBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Uri uri = Uri.parse("smsto:"+ "7989979537");
+                Uri uri = Uri.parse("smsto:"+ "9666339067");
                 Intent i=new Intent(Intent.ACTION_SENDTO,uri);
                 i.setPackage("com.whatsapp");
                 startActivity(i);
@@ -81,7 +81,7 @@ public class ContactUsFragment extends Fragment {
 
     private void sendEmail() {
         Log.i("sendEmail","");
-        String[] TO = {"sales@sajinigarments.com"};
+        String[] TO = {"livingwaterplant@gmail.com"};
         String[] CC = {""};
         Intent emailIntent = new Intent(Intent.ACTION_SEND);
 

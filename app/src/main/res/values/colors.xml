@@ -8,9 +8,10 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="Btn_Blue">#74ccf4</color>
-    <color name="lavender">#8692f7</color>
+    <color name="lavender">#399fcc</color>
     <color name="red">#ffff0000</color>
     <color name="colorAccent">#ffebecf0</color>
     <color name="successGreen">#11a10c</color>
+    <color name="whaterdrop">#399fcc</color>
 
 </resources>

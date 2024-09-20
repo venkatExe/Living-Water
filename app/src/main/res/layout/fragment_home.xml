@@ -4,18 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:padding="16dp"
-    android:background="@color/white"
-    tools:context=".MainActivity">
+    tools:context=".HomeFragment">
 
+<!--   "Here we need to implement layout for the proper alignment for all caeds in one layout"-->
 
     <androidx.cardview.widget.CardView
         android:id="@+id/waterCardView"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:background="@color/whaterdrop"
+        android:background="@color/white"
         android:layout_marginTop="16dp"
         app:cardCornerRadius="8dp"
         app:cardElevation="16dp">
@@ -88,13 +87,11 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/c_waterCardView"
-        android:layout_width="match_parent"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/waterCardView"
-        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:layout_marginBottom="4dp"
         android:background="@color/white"
         app:cardCornerRadius="8dp"
         app:cardElevation="16dp">
@@ -102,8 +99,8 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
             android:background="@color/white"
+            android:orientation="vertical"
             android:padding="16dp">
 
             <ImageView
@@ -125,7 +122,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_gravity="center_horizontal"
                 android:orientation="horizontal"
                 android:visibility="gone">
@@ -157,7 +154,7 @@
             <Button
                 android:id="@+id/c_orderButton"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
                 android:onClick="order"
                 android:text="Order" />
 
